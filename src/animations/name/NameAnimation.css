@@ -1,0 +1,35 @@
+/* GlowingText.css */
+@keyframes glowing {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+
+  @font-face {
+    font-family: 'Dirt';
+    src: url(../../fonts/Dirtchunk-0W0AR.otf) format('truetype');
+  }
+
+
+  .glowing-text {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    animation: glowing 3s infinite;
+    font-family: 'Dirt';
+    font-weight: lighter;
+  }
+
+  .cursor {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -1%;
+  }

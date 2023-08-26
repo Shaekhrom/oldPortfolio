@@ -1,38 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Cyberway';
+  src: url(./fonts/CyberwayRiders-lg97d.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sdglitch';
+  src: url(./fonts/SdglitchdemoRegular-YzROj.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Dirt';
+  src: url(./fonts/Dirtchunk-0W0AR.otf) format('truetype');
+}
+
 .App {
   text-align: center;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  z-index: -1;
+  /*column organization*/
+  display: flex; 
+  flex-direction: column; 
+  max-width: 100%;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/*Header */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  position: fixed;
   display: flex;
-  flex-direction: column;
+  z-index: 0;
+  height: 10%;
+  background-color: #04d9ff;
+  box-shadow: 0px 10px 60px rgba(63, 118, 248, 0.667);
+  justify-content: center; /* Centra horizontalmente */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+/*Header list */
+.horizontal-list {
+  list-style-type: none;
+  padding:0;
+  display: flex; /* Utiliza flexbox para crear una lista horizontal */
+  align-content: space-between;
+  
+}
+
+.element-list {
+  margin-right: 40px;
+  padding: 10px;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 100px;
+  border-width: 5px;
+  font-size: 30px;
+}
+
+/*Name animation styles */
+
+.cursor {
+  z-index: 0;
+  animation: blink-animation 0.7s infinite;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes blink-animation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*Name container*/
+.nameContainer {
+  padding-top: 100px;
+  padding-left: 100px;
+  
+}
+
+.glowing-title {
+  font-size: 120px;
+  font-weight: bold;
+  color: #04d9ff;
+  animation: glowing 3s infinite;
+  width: 100%;
+  font-family: Cyberway;
+  -webkit-text-stroke: 0.1px rgb(157, 234, 255);
+}
+
+/*Body container*/
+.bodyContainer {
+  width: 100%;
+}
+
+/*About me*/
+
+.name-titleContainer {
+  display: flex;
+  flex-direction: column; /* Colocar elementos en columna */
+  align-items: flex-start; 
+  margin-left: 10%;
+  margin-top: 5%;
+  height: 100px;
+}
+
+.descriptionContainer {
+  width: 50%;
+}
+
+.description {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: lato;
+}
+
+/*Software skills*/
+.softwareSkillsContainer {
+  display: flex;
+  margin-top: 40%;
+  background-color: #000000;
+  /*column organization*/
+  display: flex; 
+  flex-direction: column; 
+}
+
+
+.softwareSkillsTitle {
+  color: #ffffff;
+  font-size: 80px;
+  font-family: Dirt;
+  margin-left: 60%;
+  animation: glowing 3s infinite;
+}
+
+.iconList {
+  justify-content: center; /* Centrar horizontalmente */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas con ancho igual */
+  grid-gap: 50px; /* Espacio entre elementos */
+  width: 95%;
+}
+
+.iconsAdapter {
+  width: 300px;
+  height: auto;
+  background-color: #3a3a3a;
+  border-radius: 10%;
+
+}
+
+/*personal proyects*/
+.personalProyectsContainer {
+  display: flex;
+  background-color: #000000;
+  /*column organization*/
+  display: flex; 
+  flex-direction: column; 
+}
+
+.personalProyectsTitleContainer {
+  margin-top: 15%;
+}
+
+
+.personalProyectsTitle {
+  color: #ffffff;
+  font-size: 80px;
+  font-family: Dirt;
+  margin-right: 60%;
+  animation: glowing 3s infinite;
+}
+
+.proyectsElement {
+  background-color: #3a3a3a;
+  border-radius: 10%;
+}
+
+
+/*contact*/
+.contactContainer {
+  display: flex;
+  background-color: #000000;
+  /*column organization*/
+  display: flex; 
+  flex-direction: column; 
+}
+
+.contactTitleContainer {
+  margin-top: 15%;
+}
+
+
+.contactTitle {
+  color: #ffffff;
+  font-size: 80px;
+  font-family: Dirt;
+  margin-left: 60%;
+  animation: glowing 3s infinite;
 }
