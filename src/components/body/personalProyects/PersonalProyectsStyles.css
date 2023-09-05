@@ -1,0 +1,26 @@
+/*personal proyects*/
+.personalProyectsContainer {
+    display: flex;
+    background-color: transparent;
+    /*column organization*/
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  .personalProyectsTitleContainer {
+    margin-top: 15%;
+  }
+  
+  
+  .personalProyectsTitle {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: Dirt;
+    margin-right: 60%;
+    animation: glowing 3s infinite;
+  }
+  
+  .proyectsElement {
+    background-color: #3a3a3a;
+    border-radius: 30px;
+  }

@@ -1,0 +1,34 @@
+/*Software skills*/
+.softwareSkillsContainer {
+    display: flex;
+    margin-top: 40%;
+    background-color: transparent;
+    /*column organization*/
+    display: flex; 
+    flex-direction: column; 
+  }
+  
+  
+  .softwareSkillsTitle {
+    color: #ffffff;
+    font-size: 80px;
+    font-family: Dirt;
+    margin-left: 60%;
+    animation: glowing 3s infinite;
+  }
+  
+  .iconList {
+    justify-content: center; /* Centrar horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas con ancho igual */
+    grid-gap: 50px; /* Espacio entre elementos */
+    width: 95%;
+  }
+  
+  .iconsAdapter {
+    width: 300px;
+    height: auto;
+    background-color: #3a3a3a;
+    border-radius: 10%;
+  
+  }

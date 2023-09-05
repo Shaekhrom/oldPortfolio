@@ -1,0 +1,59 @@
+/*Header */
+.App-header {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    height: 10%;
+    background-color: #04d9ff;
+    box-shadow: 0px 10px 60px rgba(63, 118, 248, 0.667);
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+  }
+  
+  /*Header list */
+  .horizontal-list {
+    list-style-type: none;
+    padding:0;
+    display: flex; /* Utiliza flexbox para crear una lista horizontal */
+    align-content: space-between;
+    
+  }
+  
+  .element-list {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 30px;
+    border: solid black;
+    border-radius: 50px;
+    border-width: 5px;
+    font-size: 35px;
+  }
+
+  .element-list:hover {
+    background-color:azure;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .element-list {
+      font-size: 10px; /* Cambia el tamaño de fuente para pantallas más pequeñas */
+      border-width: 2px;
+    }
+  }
+
+  @media (max-height: 768px) {
+    .element-list {
+      font-size: 10px; /* Cambia el tamaño de fuente para alturas de pantalla más pequeñas */
+      border-width: 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .element-list {
+      font-size: 1px; /* Cambia el tamaño de fuente para pantallas aún más pequeñas */
+    }
+  }

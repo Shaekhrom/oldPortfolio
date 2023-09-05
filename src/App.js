@@ -1,124 +1,71 @@
-import logo from './logo.svg';
+import React, {Component } from 'react';
+import Header from './components/header/Header';
+import AboutMe from './components/body/aboutMe/AboutMe';
+import SoftwareSkills from './components/body/softwareSkills/SoftwareSkills';
+import PersonalProyects from './components/body/personalProyects/PersonalProyects';
+import Contact from './components/body/contact/Contact';
 import './App.css';
-import TypingAnimation from './animations/name/NameAnimation'
-import htmlicon from './icons/html.png';
-import css3icon from './icons/css3.png';
-import jsicon from './icons/js.png';
-import reacticon from './icons/react.png';
-import javaicon from './icons/java-logo-1.png';
-import sqlIcon from './icons/sql.png';
-import gitIcon from './icons/git.png';
-import birthdayReminder from './icons/logo2.png';
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
 
 
-function App() {
- 
+  //takes a divId as a parameter
+  scrollToDiv = (divId) => {
+    // retrieve the DOM element with the specified divId using a ref
+    const element = this.myRef.current.querySelector(`#${divId}`);
+    //check if the element exists in the DOM
+    if (element) {
+      //scroll to the element
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
+
+  render(){
   return (
+    
     <div className="App">
 
       {/*Header*/}
-      <header className="App-header">
-        <div>
-          <ul className="horizontal-list">
-            <li className="element-list">About me</li>
-            <li className="element-list">Software skills</li>
-            <li className="element-list">Personal proyects</li>
-            <li className="element-list">Contact form</li>
-          </ul>
-        </div>  
-        {/**/}
-        
-      </header>
+      <Header scrollToDiv={this.scrollToDiv}/>
 
       {/*Body*/}
-      <div className="bodyContainer">
-
-        {/* */}
-        <div  className="name-titleContainer">
-
-          {/*Name with animation */}
-          <div>
-            <p className="glowing-title">Software_Developer</p>
-            <TypingAnimation/> 
-          </div>
-          
-          {/*Personal description */}
-          <div className="descriptionContainer">
-            <p className="description">"When I'm not navigating through lines of code 👨‍💻 , I love immersing myself in enchanting worlds or challenging mighty dragons 🎮. Passionate about new technologies and committed to continuous learning." </p>
-          </div>
-          
+      <div className="bodyContainer" ref={this.myRef}>
+        
+        {/*About me */}
+        <div id="div1">
+          <AboutMe/>
         </div>
+        
 
         {/*Software skills */}
-        <div className="softwareSkillsContainer">
-          <div>
-            <h1 className="softwareSkillsTitle">Main Skills</h1>
-          </div>
-          
-          <ul className='iconList'>
-            <li>
-              <img src={htmlicon} alt="Html" className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={css3icon} className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={jsicon} className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={reacticon} className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={javaicon} className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={sqlIcon} className="iconsAdapter"></img>
-            </li>
-            <li>
-              <img src={gitIcon} className="iconsAdapter"></img>
-            </li>
-          </ul>
+        <div id="div2">
+          <SoftwareSkills/>
         </div>
+        
 
         {/*Personal proyects */}
-        <div className="personalProyectsContainer">
-          <div className='personalProyectsTitleContainer'>
-            <h1 className="personalProyectsTitle">Personal Proyects</h1>
-          </div>
-          
-          <div>
-            <img src={birthdayReminder} className="proyectsElement"></img>
-          </div>
-
+        <div id="div3">
+          <PersonalProyects/>
         </div>
+        
 
         {/*Contact*/}
-        <div className="contactContainer">
-          <div className="contactTitleContainer">
-            <h1 className="contactTitle">Contact info</h1>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <p>Linkedin:</p>
-              </li>
-              <li>
-                <p>GitHub: </p>
-              </li>
-              <li>
-                <p>Gmail: </p>
-              </li>
-            </ul>
-          </div>
-
+        <div id="div4">
+          <Contact/>
         </div>
-
-
-
-
+        
+      
       </div>
     </div>
   );
+}
 }
 
 export default App;

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Cyberway';
+    src: url(../../../assets/fonts/CyberwayRiders-lg97d.ttf) format('truetype');
+  }
+
+
+/*Name animation styles */
+
+.cursor {
+    z-index: 0;
+    animation: blink-animation 0.7s infinite;
+    color: white;
+  }
+  
+  @keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  
+  /*Name container*/
+  .nameContainer {
+    padding-top: 100px;
+    padding-left: 100px;
+    
+  }
+  
+  .glowing-title {
+    font-size: 120px;
+    font-weight: bold;
+    color: #04d9ff;
+    animation: glowing 3s infinite;
+    width: 100%;
+    font-family: Cyberway;
+    -webkit-text-stroke: 0.1px rgb(157, 234, 255);
+  }
+  
+  
+  
+  /*About me*/
+  
+  .name-titleContainer {
+    display: flex;
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: flex-start; 
+    margin-left: 10%;
+    margin-top: 5%;
+    height: 100px;
+  }
+  
+  .descriptionContainer {
+    width: 50%;
+  }
+  
+  .description {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: lato;
+  }
+
+  .box {
+    padding: 10%;
+    border-radius: 10px;
+    --border-size: 2vmin;
+    --border-angle: 0turn;
+    width: 60vmin;
+    height: 25vmin;
+    background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #213 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 10%, rgb(219, 42, 255), #04d9ff );
+    background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    animation: bg-spin 7s linear infinite; 
+}
+
+@keyframes bg-spin {
+  0% {
+    --border-angle: -1turn;
+  }
+  100% {
+    --border-angle: 1turn; 
+  }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+
+  
+  
