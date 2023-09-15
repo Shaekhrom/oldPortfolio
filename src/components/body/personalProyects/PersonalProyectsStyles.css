@@ -5,11 +5,9 @@
     /*column organization*/
     display: flex; 
     flex-direction: column; 
+    padding-top: 5%;
   }
   
-  .personalProyectsTitleContainer {
-    margin-top: 15%;
-  }
   
   
   .personalProyectsTitle {

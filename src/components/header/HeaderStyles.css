@@ -33,8 +33,24 @@
     font-size: 35px;
   }
 
+  .element-list.active {
+    background-color: #bc13fe; /* Color de fondo cuando está activo */
+    color: #fff; /* Color de texto cuando está activo */
+    box-shadow: 0 0 20px 10px rgba(128, 0, 128, 0.8);
+    animation: glowing 3s infinite alternate;
+  }
+
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 20px 10px rgba(218, 4, 218, 0.649);
+    }
+    100% {
+      box-shadow: 0 0 80px 40px rgba(84, 0, 84, 0.935);
+    }
+  }
+
   .element-list:hover {
-    background-color:azure;
+    background-color:rgb(159, 255, 255);
     cursor: pointer;
   }
 
@@ -57,3 +73,7 @@
       font-size: 1px; /* Cambia el tamaño de fuente para pantallas aún más pequeñas */
     }
   }
+
+
+
+  

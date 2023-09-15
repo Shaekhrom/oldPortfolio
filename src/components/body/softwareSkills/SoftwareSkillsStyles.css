@@ -1,11 +1,10 @@
 /*Software skills*/
 .softwareSkillsContainer {
-    display: flex;
-    margin-top: 40%;
     background-color: transparent;
     /*column organization*/
     display: flex; 
     flex-direction: column; 
+    padding-top: 5%;
   }
   
   
@@ -24,11 +23,41 @@
     grid-gap: 50px; /* Espacio entre elementos */
     width: 95%;
   }
-  
-  .iconsAdapter {
-    width: 300px;
-    height: auto;
+
+  .custom-image {
+    max-width: 300px;
+    max-height: 300px;
     background-color: #3a3a3a;
     border-radius: 10%;
-  
+    
+    --a: 20deg;
+    width: 250px;
+    aspect-ratio: 1;
+    transform: perspective(400px) rotate3d(var(--r, 1, -1), 0, calc(var(--i, 1) * var(--a)));
+    -webkit-mask:
+      linear-gradient(135deg, #000c 40%, #000000, #000c 60%)
+      100% 100%/250% 250%;
+    transition: .6s;
+    cursor: pointer;
   }
+  
+  .custom-image.alt {
+    --r: 1, 1;
+    -webkit-mask:
+      linear-gradient(45deg, #000c 40%, #000, #000c 60%)
+      0 100%/250% 250%;
+  }
+  
+  .custom-image:hover {
+    --i: -1;
+    -webkit-mask-position: 0 0;
+  }
+  
+  .custom-image.alt:hover {
+    -webkit-mask-position: 100% 0;
+  }
+
+ 
+  
+  
+

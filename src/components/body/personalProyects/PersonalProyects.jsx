@@ -5,7 +5,7 @@ import birthdayReminder from '../../../assets/icons/logo2.png';
 function PersonalProyects() {
   return (
     <div className="personalProyectsContainer">
-        <div className='personalProyectsTitleContainer'>
+        <div>
             <h1 className="personalProyectsTitle">Personal Proyects</h1>
         </div>
         <div>

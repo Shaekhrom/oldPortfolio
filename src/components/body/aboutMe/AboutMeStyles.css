@@ -19,9 +19,11 @@
   
   
   /*Name container*/
-  .nameContainer {
-    padding-top: 100px;
-    padding-left: 100px;
+  .glowing-title-container {
+    display: flex;
+    flex-direction: column; /* Colocar elementos en columna */
+    max-width: 60%;
+    text-align: left;
     
   }
   
@@ -33,19 +35,19 @@
     width: 100%;
     font-family: Cyberway;
     -webkit-text-stroke: 0.1px rgb(157, 234, 255);
+    
   }
   
   
   
   /*About me*/
   
-  .name-titleContainer {
+  .aboutMeContainer {
     display: flex;
     flex-direction: column; /* Colocar elementos en columna */
-    align-items: flex-start; 
-    margin-left: 10%;
+    padding-left: 5%;
     margin-top: 5%;
-    height: 100px;
+   
   }
   
   .descriptionContainer {
@@ -59,6 +61,7 @@
   }
 
   .box {
+    margin-left: 5%;
     padding: 10%;
     border-radius: 10px;
     --border-size: 2vmin;
@@ -78,7 +81,7 @@
     background-position: center center;
     background-repeat: no-repeat;
 
-    animation: bg-spin 7s linear infinite; 
+    animation: bg-spin 5s linear infinite; 
 }
 
 @keyframes bg-spin {
@@ -95,6 +98,10 @@
     inherits: true;
     initial-value: 0turn;
 }
+
+
+
+
 
 
   

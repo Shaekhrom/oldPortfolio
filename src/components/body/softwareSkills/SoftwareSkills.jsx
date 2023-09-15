@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './SoftwareSkillsStyles.css';
 import htmlicon from '../../../assets/icons/html.png';
 import css3icon from '../../../assets/icons/css3.png';
@@ -8,8 +8,9 @@ import javaicon from '../../../assets/icons/java-logo-1.png';
 import sqlIcon from '../../../assets/icons/sql.png';
 import gitIcon from '../../../assets/icons/git.png';
 
-
 function SoftwareSkills() {
+
+
     return (
         /*Software skills */
         <div className="softwareSkillsContainer">
@@ -19,27 +20,28 @@ function SoftwareSkills() {
           
           <ul className='iconList'>
             <li>
-              <img src={htmlicon} alt="Html" className="iconsAdapter"></img>
+              <img src={htmlicon} alt="Html" className="custom-image"></img>
             </li>
             <li>
-              <img src={css3icon} className="iconsAdapter"></img>
+              <img src={css3icon} alt="css" className="custom-image"></img>
             </li>
             <li>
-              <img src={jsicon} className="iconsAdapter"></img>
+              <img src={jsicon} alt="js" className="custom-image"></img>
             </li>
             <li>
-              <img src={reacticon} className="iconsAdapter"></img>
+              <img src={reacticon} alt="react" className="custom-image"></img>
             </li>
             <li>
-              <img src={javaicon} className="iconsAdapter"></img>
+              <img src={javaicon} alt="java" className="custom-image"></img>
             </li>
             <li>
-              <img src={sqlIcon} className="iconsAdapter"></img>
+              <img src={sqlIcon} alt="sql"  className="custom-image"></img>
             </li>
             <li>
-              <img src={gitIcon} className="iconsAdapter"></img>
+              <img src={gitIcon} alt="git" className="custom-image"></img>
             </li>
           </ul>
+    
         </div>
     );
 }

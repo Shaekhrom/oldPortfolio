@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="contactContainer">
-          <div className="contactTitleContainer">
+          <div>
             <h1 className="contactTitle">Contact info</h1>
           </div>
           <div>
