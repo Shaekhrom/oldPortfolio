@@ -21,17 +21,17 @@ function App() {
             <ul className='contactElementList'>
 
               <li className='contactElementContainer' onClick={handleLiClick} style={{ cursor: 'pointer' }}> 
-                <img src={linkedin} className="contactElement" ></img>
+                <img src={linkedin} className="contactElement" alt='LinkedinIcon' ></img>
                 <p className='contactText'>Linkedin</p>
               </li>
 
               <li className='contactElementContainer'>
-               <img src={github} className="contactElement"></img> 
+               <img src={github} className="contactElement" alt='GitHubIcon'></img> 
                 <p className='contactText'>GitHub</p>
               </li>
 
               <li className='contactElementContainer'>
-                <img src={gmail} className="contactElement"></img>
+                <img src={gmail} className="contactElement" alt='GmailIcon'></img>
                 <p className='contactText'>Gmail</p>
               </li>
 
