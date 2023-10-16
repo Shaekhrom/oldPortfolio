@@ -1,44 +1,52 @@
+/*container*/
 .contactContainer {
     display: flex;
     background-color: transparent;
     /*column organization*/
     flex-direction: column; 
     padding-top: 5%;
-  }
-  
-  
-  .contactTitle {
+}
+
+/*title*/
+.contactTitle {
     color: #ffffff;
     font-size: 80px;
     font-family: Dirt;
     margin-left: 60%;
     animation: glowing 3s infinite;
-  }
-  
-  .contactElement {
+}
+
+/*list*/
+.contactElementList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+}
+
+/*element container inside list*/
+.contactElementContainer {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    position: relative; /* Necesario para posicionar el ::before de forma absoluta */
+}
+
+/*element*/
+.contactElement {
     background-color: #000000;
     border-radius: 10%;
     width: 20%;
     height: auto;
-  }
-  
-  .contactText {
+}
+
+/*text*/
+.contactText {
     color: #04d9ff;
     font-family: lato;
     font-size: 80px;
     margin-left: 5%;
-  }
-  
-  .contactElementContainer {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    width: 30%;
-  }
-  
-  .contactElementList {
-    list-style: none;
-    display: flex; 
-    justify-content: center; 
-    
-  }
+}
+
+

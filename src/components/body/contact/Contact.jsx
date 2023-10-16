@@ -8,16 +8,28 @@ import linkedin from '../../../assets/icons/linkedin.png';
 function App() {
 
 
-    const handleLiClick = () => {
-        window.location.href = 'https://www.linkedin.com/in/alejandro-barbacil-castro-955372184/';
-    };  
+  const handleLiClick = () => {
+    const linkedinURL = 'https://www.linkedin.com/in/alejandro-barbacil-castro-623742296/';
+  
+    window.open(linkedinURL, '_blank');
+  };
+
+  const handleGitHubClick = () => {
+    const githubURL = 'https://github.com/Shaekhrom?tab=repositories';
+  
+    window.open(githubURL, '_blank');
+  };
+  
+
 
   return (
     <div className="contactContainer">
           <div>
             <h1 className="contactTitle">Contact info</h1>
           </div>
+
           <div>
+
             <ul className='contactElementList'>
 
               <li className='contactElementContainer' onClick={handleLiClick} style={{ cursor: 'pointer' }}> 
@@ -25,7 +37,7 @@ function App() {
                 <p className='contactText'>Linkedin</p>
               </li>
 
-              <li className='contactElementContainer'>
+              <li className='contactElementContainer' onClick={handleGitHubClick} style={{ cursor: 'pointer' }}>
                <img src={github} className="contactElement" alt='GitHubIcon'></img> 
                 <p className='contactText'>GitHub</p>
               </li>
@@ -41,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
