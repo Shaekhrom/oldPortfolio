@@ -55,17 +55,23 @@
   }
 
   /*TODO-falta probar con pantallas mas grandes*/
+  @media (max-width: 1200px) {
+    .element-list {
+      font-size: 30px; 
+      border-width: 4px;
+    }
+  }
 
   @media (max-width: 1100px) {
     .element-list {
-      font-size: 27px; 
+      font-size: 25px; 
       border-width: 4px;
     }
   }
 
   @media (max-width: 1000px) {
     .element-list {
-      font-size: 25px; 
+      font-size: 22px; 
       border-width: 3px;
     }
   }
@@ -81,6 +87,14 @@
     .element-list {
       font-size: 15px; 
       border-width: 2px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .element-list {
+      font-size: 15px; 
+      border-width: 2px;
+      margin: 20px;
     }
   }
   

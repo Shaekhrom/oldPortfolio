@@ -22,3 +22,67 @@
     background-color: #3a3a3a;
     border-radius: 30px;
   }
+
+  @media (max-width: 1500px) {
+    .personalProyectsTitle {
+      font-size: 65px;     
+    }
+    .proyectsElement {
+      width: 90%;
+      height: 90%;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .personalProyectsTitle {
+      font-size: 60px; 
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .personalProyectsTitle {
+      font-size: 55px; 
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .personalProyectsTitle {
+      font-size: 50px; 
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .personalProyectsTitle {
+      font-size: 50px; 
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .personalProyectsTitle {
+      font-size: 50px; 
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .personalProyectsTitle {
+      font-size: 45px; 
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .personalProyectsTitle {
+      font-size: 35px; 
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .personalProyectsTitle {
+      font-size: 30px; 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .personalProyectsTitle {
+      font-size: 25px; 
+    }
+  }

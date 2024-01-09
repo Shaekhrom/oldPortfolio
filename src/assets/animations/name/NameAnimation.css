@@ -27,10 +27,19 @@
     font-weight: lighter;
   }
 
+  .cursor {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -1%;
+  }
+
   @media (max-width: 1500px) {
     .glowing-text {
-      font-size: 65px; 
-      
+      font-size: 65px;     
+    }
+    .cursor{
+      font-size: 55px;
     }
   }
 
@@ -38,6 +47,9 @@
     .glowing-text {
       font-size: 60px; 
       
+    }
+    .cursor{
+      font-size: 50px;
     }
   }
 
@@ -47,6 +59,9 @@
       font-size: 55px; 
       
     }
+    .cursor{
+      font-size: 45px;
+    }
   }
 
 
@@ -55,12 +70,18 @@
       font-size: 50px; 
       
     }
+    .cursor{
+      font-size: 40px;
+    }
   }
 
   @media (max-width: 1100px) {
     .glowing-text {
       font-size: 50px; 
       
+    }
+    .cursor{
+      font-size: 40px;
     }
   }
 
@@ -69,12 +90,18 @@
       font-size: 50px; 
       
     }
+    .cursor{
+      font-size: 40px;
+    }
   }
 
   @media (max-width: 900px) {
     .glowing-text {
       font-size: 45px; 
       
+    }
+    .cursor{
+      font-size: 40px;
     }
   }
 
@@ -83,12 +110,18 @@
       font-size: 35px; 
       
     }
+    .cursor{
+      font-size: 30px;
+    }
   }
 
   @media (max-width: 700px) {
     .glowing-text {
       font-size: 30px; 
       
+    }
+    .cursor{
+      font-size: 25px;
     }
   }
 
@@ -98,11 +131,9 @@
       
       
     }
+    .cursor{
+      font-size: 20px;
+    }
   }
 
-  .cursor {
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: bold;
-    margin-top: -1%;
-  }
+  
