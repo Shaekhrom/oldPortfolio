@@ -59,7 +59,7 @@ class TypingAnimation extends Component {
     const { currentText } = this.state;
 
     return (
-      <div style={{ display: 'flex', alignItems: 'center', marginTop: '-22%'  }}>
+      <div style={{ display: 'flex', alignItems: 'center',maxHeight: '2em'}}>
         <p className="glowing-text">{"<-" + currentText }</p>
         <span className="cursor">{'|'}</span>
         <span className="glowing-text">{"->"}</span>
