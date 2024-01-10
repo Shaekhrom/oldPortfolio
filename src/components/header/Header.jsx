@@ -59,25 +59,25 @@ class Header extends Component {
             className={`element-list ${this.state.activeDiv === 'div1' ? 'active' : ''}`}
             onClick={() => this.scrollToDiv('div1')}
           >
-            About me
+            About Me
           </li>
           <li
             className={`element-list ${this.state.activeDiv === 'div2' ? 'active' : ''}`}
             onClick={() => this.scrollToDiv('div2')}
           >
-            Software skills
+            Skills
           </li>
           <li
             className={`element-list ${this.state.activeDiv === 'div3' ? 'active' : ''}`}
             onClick={() => this.scrollToDiv('div3')}
           >
-            Personal projects
+            Projects
           </li>
           <li
             className={`element-list ${this.state.activeDiv === 'div4' ? 'active' : ''}`}
             onClick={() => this.scrollToDiv('div4')}
           >
-            Contact form
+            Contact
           </li>
         </ul>
       </div>
