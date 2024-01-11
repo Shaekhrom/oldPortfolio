@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/shaekhromPortfolio/static/css/main.cfe63ad6.css",
+    "main.js": "/shaekhromPortfolio/static/js/main.ce88ba1b.js",
+    "static/css/793.0ed73112.chunk.css": "/shaekhromPortfolio/static/css/793.0ed73112.chunk.css",
+    "static/js/793.ab1d06b2.chunk.js": "/shaekhromPortfolio/static/js/793.ab1d06b2.chunk.js",
+    "static/css/758.db03a8c8.chunk.css": "/shaekhromPortfolio/static/css/758.db03a8c8.chunk.css",
+    "static/js/758.164dd140.chunk.js": "/shaekhromPortfolio/static/js/758.164dd140.chunk.js",
+    "static/css/517.00070f79.chunk.css": "/shaekhromPortfolio/static/css/517.00070f79.chunk.css",
+    "static/js/517.c88e39ae.chunk.js": "/shaekhromPortfolio/static/js/517.c88e39ae.chunk.js",
+    "static/css/422.99e23c20.chunk.css": "/shaekhromPortfolio/static/css/422.99e23c20.chunk.css",
+    "static/js/422.ec3e6d00.chunk.js": "/shaekhromPortfolio/static/js/422.ec3e6d00.chunk.js",
+    "static/js/438.2d958751.chunk.js": "/shaekhromPortfolio/static/js/438.2d958751.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/shaekhromPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/logo2.png": "/shaekhromPortfolio/static/media/logo2.84894c54cf69e5be1004.png",
+    "static/media/react.png": "/shaekhromPortfolio/static/media/react.f43f2cb73d588ada135a.png",
+    "static/media/sql.png": "/shaekhromPortfolio/static/media/sql.395eaf9d7981fad81af5.png",
+    "static/media/css3.png": "/shaekhromPortfolio/static/media/css3.19c8605d6b2861f5fbe0.png",
+    "static/media/java-logo-1.png": "/shaekhromPortfolio/static/media/java-logo-1.fdabd4e11f1235e4e8e0.png",
+    "static/media/git.png": "/shaekhromPortfolio/static/media/git.452506198c2cb7381a6d.png",
+    "static/media/CyberwayRiders-lg97d.ttf": "/shaekhromPortfolio/static/media/CyberwayRiders-lg97d.a5eed877f3e56aea68a0.ttf",
+    "static/media/Dirtchunk-0W0AR.otf": "/shaekhromPortfolio/static/media/Dirtchunk-0W0AR.336e1ffe2a3d10d32b9f.otf",
+    "static/media/SdglitchdemoRegular-YzROj.ttf": "/shaekhromPortfolio/static/media/SdglitchdemoRegular-YzROj.b76e8f88786cc937d498.ttf",
+    "index.html": "/shaekhromPortfolio/index.html",
+    "main.cfe63ad6.css.map": "/shaekhromPortfolio/static/css/main.cfe63ad6.css.map",
+    "main.ce88ba1b.js.map": "/shaekhromPortfolio/static/js/main.ce88ba1b.js.map",
+    "793.0ed73112.chunk.css.map": "/shaekhromPortfolio/static/css/793.0ed73112.chunk.css.map",
+    "793.ab1d06b2.chunk.js.map": "/shaekhromPortfolio/static/js/793.ab1d06b2.chunk.js.map",
+    "758.db03a8c8.chunk.css.map": "/shaekhromPortfolio/static/css/758.db03a8c8.chunk.css.map",
+    "758.164dd140.chunk.js.map": "/shaekhromPortfolio/static/js/758.164dd140.chunk.js.map",
+    "517.00070f79.chunk.css.map": "/shaekhromPortfolio/static/css/517.00070f79.chunk.css.map",
+    "517.c88e39ae.chunk.js.map": "/shaekhromPortfolio/static/js/517.c88e39ae.chunk.js.map",
+    "422.99e23c20.chunk.css.map": "/shaekhromPortfolio/static/css/422.99e23c20.chunk.css.map",
+    "422.ec3e6d00.chunk.js.map": "/shaekhromPortfolio/static/js/422.ec3e6d00.chunk.js.map",
+    "438.2d958751.chunk.js.map": "/shaekhromPortfolio/static/js/438.2d958751.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/shaekhromPortfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfe63ad6.css",
+    "static/js/main.ce88ba1b.js"
+  ]
+}
