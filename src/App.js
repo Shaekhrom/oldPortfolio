@@ -21,6 +21,8 @@ class App extends Component {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
+  
 
   render() {
     return (

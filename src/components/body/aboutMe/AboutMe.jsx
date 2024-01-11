@@ -7,16 +7,21 @@ const AboutMe = () => {
     /* About me */
     <div className="contenedorPrincipal">
       <div className="divHijo">
-        <p className="title">Software_Developer</p>
-       <TypingAnimation/>
-      </div>    
-       <div className="divHijo">
+        <div>
+         <p className="title">Software_Developer</p>
+        </div>
+        <div>
+          <TypingAnimation/>
+        </div>
+      </div>
+         
+      <div className="divHijo">
         <p className ="desc">
             "When I'm not navigating through lines of code 👨‍💻,
             I love immersing myself in enchanting worlds or challenging mighty dragons 🎮.
             Passionate about new technologies and committed to continuous learning."
-          </p>
-       </div>
+        </p>
+      </div>
     </div>
   );
 }

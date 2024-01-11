@@ -8,7 +8,7 @@ function PersonalProyects() {
         <div>
             <h1 className="personalProyectsTitle">Personal Proyects</h1>
         </div>
-        <div>
+        <div className="centrator">
             <img src={birthdayReminder} className="proyectsElement"></img>
         </div>
     </div>

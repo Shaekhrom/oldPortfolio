@@ -1,12 +1,13 @@
-import React from 'react';
-import './ContactStyles.css';
+import React, { useState } from 'react';import './ContactStyles.css';
 import gmail from '../../../assets/icons/gmail.png';
 import github from '../../../assets/icons/github.png';
 import linkedin from '../../../assets/icons/linkedin.png';
 
 
 function App() {
+  
 
+  const [emailText, setEmailText] = useState('Gmail');
 
   const handleLiClick = () => {
     const linkedinURL = 'https://www.linkedin.com/in/alejandro-barbacil-castro-623742296/';
@@ -20,6 +21,11 @@ function App() {
     window.open(githubURL, '_blank');
   };
   
+  const handleEmailClick = () => {
+
+    setEmailText('shaekhrom@gmail.com');
+    
+  };
 
 
   return (
@@ -31,20 +37,20 @@ function App() {
           <div>
 
             <ul className='contactElementList'>
-
-              <li className='contactElementContainer' onClick={handleLiClick} style={{ cursor: 'pointer' }}> 
+              
+              <li className='contactElementContainer' > 
                 <img src={linkedin} className="contactElement" alt='LinkedinIcon' ></img>
-                <p className='contactText'>Linkedin</p>
+                <p className='contactText' onClick={handleLiClick} style={{ cursor: 'pointer' }}>Linkedin</p>
               </li>
 
-              <li className='contactElementContainer' onClick={handleGitHubClick} style={{ cursor: 'pointer' }}>
+              <li className='contactElementContainer' >
                <img src={github} className="contactElement" alt='GitHubIcon'></img> 
-                <p className='contactText'>GitHub</p>
+                <p className='contactText' onClick={handleGitHubClick} style={{ cursor: 'pointer' }}>GitHub</p>
               </li>
 
               <li className='contactElementContainer'>
-                <img src={gmail} className="contactElement" alt='GmailIcon'></img>
-                <p className='contactText'>Gmail</p>
+                <img src={gmail} className="contactElement" alt='GmailIcon' />
+                <p className='contactText' onClick={handleEmailClick} style={{ cursor: 'pointer' }}>{emailText}</p>
               </li>
 
             </ul>
